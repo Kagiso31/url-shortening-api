@@ -247,12 +247,16 @@ button {
   padding: 16px 40px;
   border-radius: 30px;
   font-size: 18px;
+  transition: opacity 250ms ease-in-out;
+}
+
+.btn.btn-hero:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 1024px) {
   .hero {
     display: flex;
-    align-items: center;
     margin-top: 60px;
     gap: clamp(10px, 7vw, 100px);
   }
@@ -261,10 +265,15 @@ button {
     order: 0;
     text-align: left;
     flex: 1 0 50%;
+    padding-top: 75px;
   }
 
   .hero-heading {
     font-size: clamp(50px, 6vw, 64px);
+  }
+
+  .hero-copy {
+    margin-bottom: 38px;
   }
 
   .hero-image {
