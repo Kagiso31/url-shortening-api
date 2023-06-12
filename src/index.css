@@ -25,7 +25,7 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  color: var(--gray);
+  color: var(--grayish-violet);
   overflow-x: hidden;
 }
 
@@ -33,6 +33,7 @@ h1,
 h2,
 h3 {
   margin-top: 0;
+  color: var(--very-dark-blue);
 }
 
 h1 {
@@ -291,7 +292,7 @@ button {
 
 /* Shorten Link Section */
 .shorten-link-section {
-  background-color: hsl(257, 7%, 90%);
+  background-color: hsl(230, 23%, 95%);
 }
 
 .form-container {
@@ -481,4 +482,123 @@ form > .btn-form:hover {
 
 .shorten-link-item .btn-copied {
   background-color: var(--dark-violet);
+}
+
+/* Features Section */
+.features {
+  background-color: hsl(230, 23%, 95%);
+  text-align: center;
+  padding-top: 93px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 1024px) {
+  .features {
+    padding-top: 132px;
+    padding-bottom: 120px;
+  }
+}
+
+.features-cards-container {
+  margin-top: 100px;
+}
+
+@media (min-width: 1024px) {
+  .features-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+.features-card {
+  position: relative;
+  background-color: white;
+  padding: 0px 34px;
+  padding-bottom: 38px;
+  margin-bottom: 92px;
+  border-radius: 10px;
+}
+
+@media (min-width: 1024px) {
+  .features-card {
+    text-align: left;
+    margin-bottom: 0;
+    height: fit-content;
+  }
+
+  .features-card:nth-child(2) {
+    margin-top: 44px;
+  }
+
+  .features-card:nth-child(3) {
+    margin-top: 88px;
+  }
+}
+
+.features-card:nth-child(2)::before,
+.features-card:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 92px;
+  background-color: var(--cyan);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 1024px) {
+  .features-card:nth-child(2)::before,
+  .features-card:nth-child(2)::after {
+    width: 30px;
+    height: 8px;
+    transform: none;
+  }
+}
+
+.features-card:nth-child(2)::before {
+  top: -92px;
+}
+
+@media (min-width: 1024px) {
+  .features-card:nth-child(2)::before {
+    top: 108px;
+    right: 0;
+    bottom: 0;
+    left: -30px;
+  }
+}
+
+.features-card:nth-child(2)::after {
+  bottom: -92px;
+}
+
+@media (min-width: 1024px) {
+  .features-card:nth-child(2)::after {
+    top: 108px;
+    right: -30px;
+    bottom: 0;
+    left: auto;
+  }
+}
+
+.features-card:last-child {
+  margin-bottom: 0;
+}
+
+.features-card-icon {
+  position: relative;
+  background-color: var(--dark-violet);
+  border-radius: 100%;
+  padding: 24px;
+  margin-top: -44px;
+}
+
+.features-card-heading {
+  margin-top: 21px;
+  margin-bottom: 25px;
+}
+
+.features-card-body {
+  margin: 0;
 }
