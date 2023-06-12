@@ -293,6 +293,7 @@ button {
 /* Shorten Link Section */
 .shorten-link-section {
   background-color: hsl(230, 23%, 95%);
+  padding-block: 1px;
 }
 
 .form-container {
@@ -620,15 +621,21 @@ form > .btn-form:hover {
 
 @media (min-width: 1024px) {
   .cta {
-    padding-top: 66px;
-    padding-bottom: 58px;
+    padding: 56px 0;
     background-image: url(src/images/bg-boost-desktop.svg);
-    background-position: 0% 0%;
+    background-size: cover;
+    background-position: 50% 0%;
   }
 }
 
 .cta-heading {
   color: white;
+}
+
+@media (min-width: 1024px) {
+  .cta-heading {
+    font-size: 42px;
+  }
 }
 
 .cta .btn-cta {
