@@ -497,6 +497,10 @@ form > .btn-form:hover {
     padding-top: 132px;
     padding-bottom: 120px;
   }
+
+  .features h2 {
+    font-size: 38px;
+  }
 }
 
 .features-cards-container {
@@ -635,4 +639,83 @@ form > .btn-form:hover {
 
 .cta .btn-cta:hover {
   box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.5);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 56px 0px;
+  background-color: var(--very-dark-violet);
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-nav {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+  }
+}
+
+.footer-logo > svg {
+  margin-bottom: 50px;
+}
+
+.footer-logo > svg > path {
+  fill: white;
+}
+
+.footer-links-section {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1024px) {
+  .footer-links-section {
+    margin-bottom: 0;
+  }
+}
+
+.footer-links-section > h3 {
+  color: white;
+  margin-bottom: 32px;
+}
+
+.footer-links-list > li {
+  margin-bottom: 18px;
+}
+
+.footer-links-list > li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-links-list a {
+  color: var(--grayish-violet);
+  transition: color 250ms ease-in-out;
+}
+
+.footer-links-list a:hover {
+  color: var(--cyan);
+}
+
+.footer-social-links > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-social-links svg {
+  cursor: pointer;
+}
+
+.footer-social-links svg > path {
+  transition: fill 250ms ease-in-out;
+}
+
+.footer-social-links svg > path:hover {
+  fill: var(--cyan);
 }

@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import ShortenLinkSection from "./components/ShortenLinkSection";
 import Features from "./components/Features";
 import CTA from "./components/CTA";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <ShortenLinkSection />
       <Features />
       <CTA />
+      <Footer />
     </>
   );
 };
