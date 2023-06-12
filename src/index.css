@@ -651,7 +651,8 @@ form > .btn-form:hover {
 /* Footer */
 .footer {
   text-align: center;
-  padding: 56px 0px;
+  padding-top: 56px;
+  padding-bottom: 24px;
   background-color: var(--very-dark-violet);
 }
 
@@ -725,4 +726,21 @@ form > .btn-form:hover {
 
 .footer-social-links svg > path:hover {
   fill: var(--cyan);
+}
+
+.attribution p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.attribution p:last-child {
+  margin: 0;
+}
+
+.attribution a {
+  color: var(--gray);
+}
+
+.author:hover {
+  color: var(--cyan);
 }
