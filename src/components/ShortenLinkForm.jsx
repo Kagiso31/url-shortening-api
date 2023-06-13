@@ -11,7 +11,7 @@ const ShortenLinkForm = ({ getShortLink, errorMessage, isLoading }) => {
 
   return (
     <div className="form-container">
-      <form onSubmit={handleSubmit}>
+      <form autoComplete="off" onSubmit={handleSubmit}>
         <input
           type="url"
           placeholder="Shorten a link here..."
