@@ -396,6 +396,7 @@ form > .btn-form:hover {
 }
 
 .shorten-link-item {
+  position: relative;
   background-color: white;
   padding: 17px;
   border-radius: 10px;
@@ -408,7 +409,7 @@ form > .btn-form:hover {
     justify-content: space-between;
     align-items: center;
     gap: 26px;
-    padding: 24px 28px;
+    padding: 32px 40px;
   }
 }
 
@@ -425,6 +426,18 @@ form > .btn-form:hover {
   .shorten-link-item > a {
     margin-bottom: 0;
   }
+}
+
+.shorten-link-item .delete-btn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
 }
 
 .shorten-link-item .original-link {
