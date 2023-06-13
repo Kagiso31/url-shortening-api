@@ -1,3 +1,4 @@
+import logo from "../images/logo.svg";
 import { useState } from "react";
 
 const NavigationBar = () => {
@@ -11,7 +12,7 @@ const NavigationBar = () => {
     <header className="header">
       <nav className="navbar">
         <a className="logo" href="/">
-          <img src="src/images/logo.svg" alt="Shortly logo" />
+          <img src={logo} alt="Shortly logo" />
         </a>
 
         <button

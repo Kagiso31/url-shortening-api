@@ -1,3 +1,6 @@
+import brandRecognitionIcon from "../images/icon-brand-recognition.svg";
+import detailsRecordsIcon from "../images/icon-detailed-records.svg";
+import fullyCustomizableIcon from "../images/icon-fully-customizable.svg";
 import FeaturesCard from "./FeaturesCard";
 
 const Features = () => {
@@ -11,17 +14,17 @@ const Features = () => {
         </p>
         <div className="features-cards-container">
           <FeaturesCard
-            icon_src="src/images/icon-brand-recognition.svg"
+            icon_src={brandRecognitionIcon}
             heading="Brand Recognition"
             body="Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content."
           />
           <FeaturesCard
-            icon_src="src/images/icon-detailed-records.svg"
+            icon_src={detailsRecordsIcon}
             heading="Detailed Records"
             body="Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."
           />
           <FeaturesCard
-            icon_src="src/images/icon-fully-customizable.svg"
+            icon_src={fullyCustomizableIcon}
             heading="Fully Customizable"
             body="Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."
           />
