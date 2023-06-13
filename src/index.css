@@ -7,6 +7,10 @@
   --grayish-violet: hsl(257, 7%, 63%);
   --very-dark-blue: hsl(255, 11%, 22%);
   --very-dark-violet: hsl(260, 8%, 14%);
+
+  /* Typography */
+  --font-family: "Poppins", sans-serif;
+  --font-size: 1.125rem; /* 18px */
 }
 
 html {
@@ -23,8 +27,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
   color: var(--grayish-violet);
   overflow-x: hidden;
 }
@@ -53,7 +57,7 @@ a:hover {
 }
 
 button {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
   cursor: pointer;
 }
 
@@ -85,14 +89,14 @@ button {
   position: relative;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .navbar {
     justify-content: flex-start;
   }
 }
 
 /* Links */
-@media (min-width: 640px) {
+@media (min-width: 64em) {
   .links-container {
     width: 100%;
     margin-left: 46px;
@@ -122,11 +126,11 @@ button {
 
   .btn.btn-nav {
     width: 120px;
-    padding: 10px 24px;
+    padding: 10px 7px;
     border-radius: 50px;
     font-weight: 700;
     flex-shrink: 0;
-    font-size: 18px;
+    font-size: var(--font-size);
     transition: opacity 250ms ease-in-out;
   }
 
@@ -159,7 +163,7 @@ button {
   transition: opacity 500ms ease-in-out;
   opacity: 0;
   height: 0;
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   visibility: hidden;
 }
 
@@ -202,7 +206,7 @@ button {
   width: 100%;
   border: 0;
   border-radius: 24px;
-  font-size: 18px;
+  font-size: var(--font-size);
   font-weight: 700;
   color: hsl(0, 0%, 100%);
   background-color: var(--cyan);
@@ -212,14 +216,14 @@ button {
 /* Visibility */
 
 /* Desktop */
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .mobile-only {
     display: none;
   }
 }
 
 /* Mobile */
-@media (max-width: 1023px) {
+@media (max-width: 63.9375em) {
   .desktop-only {
     display: none;
   }
@@ -244,7 +248,7 @@ button {
 }
 
 .hero-heading {
-  font-size: 40px;
+  font-size: 2.5rem; /* 40px */
   line-height: 1.1;
   color: var(--very-dark-blue);
 }
@@ -252,7 +256,7 @@ button {
 .btn.btn-hero {
   padding: 16px 40px;
   border-radius: 100px;
-  font-size: 18px;
+  font-size: var(--font-size);
   transition: opacity 250ms ease-in-out;
 }
 
@@ -260,7 +264,7 @@ button {
   opacity: 0.5;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .hero {
     display: flex;
     margin-top: 60px;
@@ -310,7 +314,7 @@ form {
   background-position: 100% 0%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   form {
     display: flex;
     justify-content: space-between;
@@ -326,11 +330,11 @@ form > .url-textbox {
   width: 100%;
   padding: 20px 18px;
   border-radius: 10px;
-  font-size: 18px;
-  font-family: "Poppins", sans-serif;
+  font-size: var(--font-size);
+  font-family: var(--font-family);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   form > .url-textbox {
     display: inline-block;
     width: auto;
@@ -358,7 +362,7 @@ form > .url-textbox {
   margin: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .error-message {
     position: absolute;
     margin-top: 75px;
@@ -370,7 +374,7 @@ form > .btn-form {
   width: 100%;
   padding: 20px 48px;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: var(--font-size);
   margin-top: 18px;
   transition: box-shadow 250ms ease-in-out;
 }
@@ -379,7 +383,7 @@ form > .btn-form:hover {
   box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.5);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   form > .btn-form {
     display: inline-block;
     width: auto;
@@ -398,7 +402,7 @@ form > .btn-form:hover {
   margin-bottom: 22px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .shorten-link-item {
     display: flex;
     justify-content: space-between;
@@ -417,7 +421,7 @@ form > .btn-form:hover {
   margin-bottom: 14px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .shorten-link-item > a {
     margin-bottom: 0;
   }
@@ -430,7 +434,7 @@ form > .btn-form:hover {
   white-space: nowrap;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .shorten-link-item .original-link {
     flex: 1;
   }
@@ -442,7 +446,7 @@ form > .btn-form:hover {
   height: 1px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .shorten-link-item hr {
     display: none;
   }
@@ -456,7 +460,7 @@ form > .btn-form:hover {
   white-space: nowrap;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .shorten-link-item .shortened-link {
     margin-top: 0;
   }
@@ -465,7 +469,7 @@ form > .btn-form:hover {
 .shorten-link-item > .btn-copy {
   text-align: center;
   width: 100%;
-  font-size: 18px;
+  font-size: var(--font-size);
   padding: 8px 0px;
   border-radius: 10px;
   transition: opacity 250ms ease-in-out;
@@ -475,7 +479,7 @@ form > .btn-form:hover {
   opacity: 0.5;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .shorten-link-item > .btn-copy {
     width: 128px;
   }
@@ -493,14 +497,14 @@ form > .btn-form:hover {
   padding-bottom: 80px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .features {
     padding-top: 132px;
     padding-bottom: 120px;
   }
 
   .features h2 {
-    font-size: 38px;
+    font-size: 2.375rem; /* 38px */
   }
 }
 
@@ -508,7 +512,7 @@ form > .btn-form:hover {
   margin-top: 100px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .features-cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -525,7 +529,7 @@ form > .btn-form:hover {
   border-radius: 10px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .features-card {
     text-align: left;
     margin-bottom: 0;
@@ -552,7 +556,7 @@ form > .btn-form:hover {
   transform: translateX(-50%);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .features-card:nth-child(2)::before,
   .features-card:nth-child(2)::after {
     width: 30px;
@@ -565,7 +569,7 @@ form > .btn-form:hover {
   top: -92px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .features-card:nth-child(2)::before {
     top: 108px;
     right: 0;
@@ -578,7 +582,7 @@ form > .btn-form:hover {
   bottom: -92px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .features-card:nth-child(2)::after {
     top: 108px;
     right: -30px;
@@ -619,7 +623,7 @@ form > .btn-form:hover {
   background-position: 100% 0%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .cta {
     padding: 56px 0;
     background-image: url(src/images/bg-boost-desktop.svg);
@@ -632,16 +636,16 @@ form > .btn-form:hover {
   color: white;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .cta-heading {
-    font-size: 42px;
+    font-size: 2.625rem; /* 42px */
   }
 }
 
 .cta .btn-cta {
   padding: 12px 36px;
   border-radius: 100px;
-  font-size: 18px;
+  font-size: var(--font-size);
 }
 
 .cta .btn-cta:hover {
@@ -656,13 +660,13 @@ form > .btn-form:hover {
   background-color: var(--very-dark-violet);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .footer {
     text-align: left;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .footer-nav {
     display: grid;
     grid-template-columns: 2fr repeat(4, 1fr);
@@ -681,7 +685,7 @@ form > .btn-form:hover {
   margin-bottom: 50px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .footer-links-section {
     margin-bottom: 0;
   }

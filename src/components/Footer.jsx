@@ -119,14 +119,6 @@ const Footer = () => {
         </nav>
         <div className="attribution">
           <p>
-            <a
-              href="https://www.flaticon.com/free-icons/link"
-              title="link icons"
-            >
-              Link icons created by nawicon - Flaticon
-            </a>
-          </p>
-          <p>
             Challenge by
             <a
               href="https://www.frontendmentor.io?ref=challenge"
@@ -138,8 +130,21 @@ const Footer = () => {
           </p>
           <p>
             Coded by{" "}
-            <a href="https://www.github.com/Kagiso31" className="author">
+            <a
+              target="_blank"
+              href="https://www.github.com/Kagiso31"
+              className="author"
+            >
               Kagiso Mokou
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.flaticon.com/free-icons/link"
+              title="link icons"
+              target="_blank"
+            >
+              Favicon created by nawicon - Flaticon
             </a>
           </p>
         </div>
